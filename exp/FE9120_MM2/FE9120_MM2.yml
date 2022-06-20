@@ -5,7 +5,7 @@ googlecloud:
 
 
 experiment:
-  script: "src/completo/912_FE_desborde.r"
+  script: "src/completo/912_FE_desborde_t1.r"
   restart: FALSE
   name: "exp"
   requires: [ "DT0001" ]
@@ -28,37 +28,16 @@ param:
     minimo:    FALSE
     maximo:    FALSE
     promedio:  FALSE
-    ratioavg:  TRUE
-    ratiomax:  FALSE
-
-
-  tendenciaYmuchomasdos: 
-    correr: TRUE #Great power comes with great responsability
-    ventana: 12
-    tendencia: TRUE
-    minimo:    FALSE
-    maximo:    FALSE
-    promedio:  TRUE
     ratioavg:  FALSE
     ratiomax:  FALSE
 
 
-  tendenciaYmuchomastres: 
-    correr: TRUE #Great power comes with great responsability
-    ventana: 3
-    tendencia: TRUE
-    minimo:    FALSE
-    maximo:    FALSE
-    promedio:  FALSE
-    ratioavg:  TRUE
-    ratiomax:  FALSE
-
 
 
   #lags y sus deltas , 6 posiciones
-  lag:   [ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE ]
-  delta: [ TRUE, TRUE, TRUE, FALSE, FALSE, FALSE ]
-  canaritosratio: [ 0.3, 0.3, 0.1, 0.3, 0, 0 ]
+  lag:   [ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE ]
+  delta: [ TRUE, FALSE, FALSE, FALSE, FALSE, FALSE ]
+  canaritosratio: [ 0.1, 0, 0, 0, 0, 0 ]
 
   tony:  FALSE
 
