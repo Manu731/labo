@@ -1,0 +1,20 @@
+run_uuid: 91b693f0e8474f41a2a550d30ff0e45c
+experiment_id: '5'
+user_id: balzarini_bianca
+status: RUNNING
+start_time: 1.6551496e+09
+artifact_uri: mlflow-artifacts:/5/91b693f0e8474f41a2a550d30ff0e45c/artifacts
+lifecycle_stage: active
+run_id: 91b693f0e8474f41a2a550d30ff0e45c
+end_time: .na
+metrics: .na
+params: .na
+tags:
+- key:
+  - mlflow.user
+  - mlflow.source.name
+  - mlflow.source.type
+  value:
+  - balzarini_bianca
+  - /home/balzarini_bianca/labo/src/lib/exp_run_init.r
+  - LOCAL
